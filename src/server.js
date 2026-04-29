@@ -15,7 +15,10 @@ connectDB();
 // Middleware
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "https://auth-app-omega-one.vercel.app"
+    ],
     credentials: true,
   })
 );
